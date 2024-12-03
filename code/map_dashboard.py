@@ -20,10 +20,14 @@ gdf = gpd.GeoDataFrame(toplocdf, geometry=gpd.points_from_xy(toplocdf.lon, toplo
 m = folium.Map(location=CUSE, zoom_start=ZOOM)
 map = gdf.explore(gdf['amount'],
                    m = m,
+                   cmap = 'cubehelix',
                    vmin = VMIN,
                    vmax = VMAX,
                    market_type = 'circleMarker',
-                   fill = True)
+                   radius = 25,
+                   legend = True,
+                   popup = True
+                   )
 st.write(f"Number of locations where tickets exceed $1000: {len(toplocdf)}")
 sf.folium_static(map)
 
