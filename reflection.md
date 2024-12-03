@@ -23,3 +23,4 @@ Examples:
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
 `--- Reflection Below This Line ---`
+I didn't have any real issue with creating the functions/files, however I had some issue with the map dashboard and trying to get the circle sizes to be static. Even when I changed the radius to 5000, or circleMarker vs circle, it would keep the dynamic behavior. I ended up giving up on it and just deleted a lot of the modifiers I added and even then it still looked the same.
